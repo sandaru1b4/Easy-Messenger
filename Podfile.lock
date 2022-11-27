@@ -1,0 +1,26 @@
+PODS:
+  - RappleProgressHUD (4.1)
+  - SDWebImage (5.13.4):
+    - SDWebImage/Core (= 5.13.4)
+  - SDWebImage/Core (5.13.4)
+  - SDWebImageSwiftUI (2.2.1):
+    - SDWebImage (~> 5.10)
+
+DEPENDENCIES:
+  - RappleProgressHUD
+  - SDWebImageSwiftUI
+
+SPEC REPOS:
+  trunk:
+    - RappleProgressHUD
+    - SDWebImage
+    - SDWebImageSwiftUI
+
+SPEC CHECKSUMS:
+  RappleProgressHUD: f29bc5dc5f9834c2caa9c2ae21ba11f3ff2b5a85
+  SDWebImage: e5cc87bf736e60f49592f307bdf9e157189298a3
+  SDWebImageSwiftUI: 2ecf5ab6f574526326b10ecb155e72a88059d0f0
+
+PODFILE CHECKSUM: 97f85372db30b18443899f651ab36c0c4bc35653
+
+COCOAPODS: 1.11.3
