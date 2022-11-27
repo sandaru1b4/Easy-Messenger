@@ -9,19 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     
+    //MARK: - PROPERTIES
+    init() {
+        UINavigationBar.appearance().barTintColor = .clear
+    }
+    
     //MARK: - BODY
     var body: some View {
         
-        VStack {
+        NavigationView {
             
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            
-            Text("Hello, world!")
+            ChatListView()
             
         }
-        .padding()
     }
 }
 

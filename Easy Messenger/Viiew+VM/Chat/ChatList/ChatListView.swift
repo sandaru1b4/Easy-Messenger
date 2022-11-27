@@ -11,7 +11,35 @@ struct ChatListView: View {
     
     //MARK: - BODY
     var body: some View {
-        Text("Hello, World!")
+        
+        
+        ScrollView {
+            
+            VStack(spacing: 10) {
+                
+                ForEach(0..<10) { _ in
+                    
+                    ChatListRowView()
+                    
+                }
+                
+            }
+            .padding(.vertical, 24)
+            .padding(.horizontal, 15)
+            
+        }
+        
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                VStack {
+                    Text("Messages")
+                        .font(.customFont(.PoppinsSemiBold, 28))
+                        .foregroundColor(Color.white)
+                }
+            }
+        }
+        .background(Color.custom(.HEX_1B202D).ignoresSafeArea())
+        
     }
     
 }
