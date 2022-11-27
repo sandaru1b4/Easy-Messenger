@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		842302C8293321C3009C16BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842302C7293321C3009C16BF /* ContentView.swift */; };
 		842302CA293321C5009C16BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842302C9293321C5009C16BF /* Assets.xcassets */; };
 		842302CD293321C5009C16BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842302CC293321C5009C16BF /* Preview Assets.xcassets */; };
+		842302DA29334AB8009C16BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842302D929334AB8009C16BF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		842302C7293321C3009C16BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		842302C9293321C5009C16BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		842302CC293321C5009C16BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		842302D929334AB8009C16BF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				842302D329332207009C16BF /* App */,
 				842302D529332D48009C16BF /* Model */,
 				842302D729332D65009C16BF /* Support */,
+				842302D82933462C009C16BF /* LaunchScreen */,
 				842302C9293321C5009C16BF /* Assets.xcassets */,
 				842302CB293321C5009C16BF /* Preview Content */,
 			);
@@ -107,6 +110,14 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
+		842302D82933462C009C16BF /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				842302D929334AB8009C16BF /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,7 +154,7 @@
 				};
 			};
 			buildConfigurationList = 842302BD293321C3009C16BF /* Build configuration list for PBXProject "Easy Messenger" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -165,6 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842302DA29334AB8009C16BF /* LaunchScreen.storyboard in Resources */,
 				842302CD293321C5009C16BF /* Preview Assets.xcassets in Resources */,
 				842302CA293321C5009C16BF /* Assets.xcassets in Resources */,
 			);
@@ -322,9 +334,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Achitha-Sandaruwan.Easy-Messenger";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -351,9 +366,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Achitha-Sandaruwan.Easy-Messenger";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
