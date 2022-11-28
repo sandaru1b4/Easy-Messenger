@@ -23,11 +23,11 @@ struct ChatListView: View {
                     
                 }
                 
-            }
+            }//VStack
             .padding(.vertical, 24)
             .padding(.horizontal, 15)
             
-        }
+        }//Scroll
         
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
