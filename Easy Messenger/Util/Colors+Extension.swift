@@ -13,6 +13,7 @@ enum EasyMessengerColors: String {
     case HEX_292F3F = "#292F3F"
     case HEX_1B202D = "#1B202D"
     case HEX_B3B9C9 = "#B3B9C9"
+    case HEX_390F67 = "#390F67"
     
 
 }

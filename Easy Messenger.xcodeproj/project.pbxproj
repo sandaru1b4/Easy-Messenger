@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		605BE44BC309686FEA12AE70 /* Pods_Easy_Messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B145C88AF52D918D2F65C1 /* Pods_Easy_Messenger.framework */; };
+		84096C2F2944A9DD000A81C7 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84096C2E2944A9DD000A81C7 /* SignInView.swift */; };
+		84096C312944AB31000A81C7 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84096C302944AB31000A81C7 /* SignInViewModel.swift */; };
+		84096C332944C183000A81C7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84096C322944C183000A81C7 /* Extensions.swift */; };
+		84096C352944C48E000A81C7 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84096C342944C48E000A81C7 /* ViewModifiers.swift */; };
 		842302C6293321C3009C16BF /* Easy_MessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842302C5293321C3009C16BF /* Easy_MessengerApp.swift */; };
 		842302C8293321C3009C16BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842302C7293321C3009C16BF /* ContentView.swift */; };
 		842302CA293321C5009C16BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842302C9293321C5009C16BF /* Assets.xcassets */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84096C2E2944A9DD000A81C7 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		84096C302944AB31000A81C7 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		84096C322944C183000A81C7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		84096C342944C48E000A81C7 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		842302C2293321C3009C16BF /* Easy Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Messenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		842302C5293321C3009C16BF /* Easy_MessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easy_MessengerApp.swift; sourceTree = "<group>"; };
 		842302C7293321C3009C16BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -152,6 +160,7 @@
 		842302D729332D65009C16BF /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				84096C322944C183000A81C7 /* Extensions.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -183,6 +192,8 @@
 		842302E129338CB2009C16BF /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
+				84096C2E2944A9DD000A81C7 /* SignInView.swift */,
+				84096C302944AB31000A81C7 /* SignInViewModel.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -210,6 +221,7 @@
 				84851A03293396550011A518 /* Fonts */,
 				848519FF293395470011A518 /* Colors+Extension.swift */,
 				84851A01293396280011A518 /* Fonts+Extension.swift */,
+				84096C342944C48E000A81C7 /* ViewModifiers.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -347,7 +359,11 @@
 				842302E529338CF7009C16BF /* ChatListVM.swift in Sources */,
 				84851A00293395470011A518 /* Colors+Extension.swift in Sources */,
 				842302C6293321C3009C16BF /* Easy_MessengerApp.swift in Sources */,
+				84096C332944C183000A81C7 /* Extensions.swift in Sources */,
+				84096C312944AB31000A81C7 /* SignInViewModel.swift in Sources */,
 				842302DE29338C8D009C16BF /* ChatListRowView.swift in Sources */,
+				84096C2F2944A9DD000A81C7 /* SignInView.swift in Sources */,
+				84096C352944C48E000A81C7 /* ViewModifiers.swift in Sources */,
 				84851A02293396280011A518 /* Fonts+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,8 +501,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -520,8 +536,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
