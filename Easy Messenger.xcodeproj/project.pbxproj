@@ -12,6 +12,8 @@
 		84096C312944AB31000A81C7 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84096C302944AB31000A81C7 /* SignInViewModel.swift */; };
 		84096C332944C183000A81C7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84096C322944C183000A81C7 /* Extensions.swift */; };
 		84096C352944C48E000A81C7 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84096C342944C48E000A81C7 /* ViewModifiers.swift */; };
+		84096C372944CD5B000A81C7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84096C362944CD5B000A81C7 /* SignUpView.swift */; };
+		84096C392944CD70000A81C7 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84096C382944CD70000A81C7 /* SignUpViewModel.swift */; };
 		842302C6293321C3009C16BF /* Easy_MessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842302C5293321C3009C16BF /* Easy_MessengerApp.swift */; };
 		842302C8293321C3009C16BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842302C7293321C3009C16BF /* ContentView.swift */; };
 		842302CA293321C5009C16BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842302C9293321C5009C16BF /* Assets.xcassets */; };
@@ -32,6 +34,8 @@
 		84096C302944AB31000A81C7 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		84096C322944C183000A81C7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		84096C342944C48E000A81C7 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		84096C362944CD5B000A81C7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		84096C382944CD70000A81C7 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		842302C2293321C3009C16BF /* Easy Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Messenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		842302C5293321C3009C16BF /* Easy_MessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easy_MessengerApp.swift; sourceTree = "<group>"; };
 		842302C7293321C3009C16BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 		842302E029338CAB009C16BF /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				84096C362944CD5B000A81C7 /* SignUpView.swift */,
+				84096C382944CD70000A81C7 /* SignUpViewModel.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -355,9 +361,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				842302C8293321C3009C16BF /* ContentView.swift in Sources */,
+				84096C392944CD70000A81C7 /* SignUpViewModel.swift in Sources */,
 				842302DC29338C6E009C16BF /* ChatListView.swift in Sources */,
 				842302E529338CF7009C16BF /* ChatListVM.swift in Sources */,
 				84851A00293395470011A518 /* Colors+Extension.swift in Sources */,
+				84096C372944CD5B000A81C7 /* SignUpView.swift in Sources */,
 				842302C6293321C3009C16BF /* Easy_MessengerApp.swift in Sources */,
 				84096C332944C183000A81C7 /* Extensions.swift in Sources */,
 				84096C312944AB31000A81C7 /* SignInViewModel.swift in Sources */,

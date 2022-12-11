@@ -1,5 +1,5 @@
 //
-//  SignInViewModel.swift
+//  SignUpViewModel.swift
 //  Easy Messenger
 //
 //  Created by Achitha Sandaruwan on 2022-12-10.
@@ -7,24 +7,12 @@
 
 import Foundation
 
-class SignInViewModel: ObservableObject {
+
+class SignUpViewModel: ObservableObject {
     
     //MARK: - PROPERTIES
     @Published var email: String = ""
     @Published var password: String = ""
     @Published var showAlert = false
-    @Published var isSignUpActive = false
-    
+    @Published var isSignInActive = false
 }
-
-
-
-extension SignInViewModel {
-    
-    //MARK: - FUNCTIOMS
-    func signIn() {
-        
-    }
-    
-}
-

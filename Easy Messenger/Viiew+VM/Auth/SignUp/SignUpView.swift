@@ -1,5 +1,5 @@
 //
-//  SignInView.swift
+//  SignUpView.swift
 //  Easy Messenger
 //
 //  Created by Achitha Sandaruwan on 2022-12-10.
@@ -7,11 +7,10 @@
 
 import SwiftUI
 
-
-struct SignInView: View {
+struct SignUpView: View {
     
     //MARK: - PROPERTIES
-    @StateObject var vm = SignInViewModel()
+    @StateObject var vm = SignUpViewModel()
     
     
     //MARK: - BODY
@@ -41,7 +40,7 @@ struct SignInView: View {
                         
                         
                         Button(action: signIn) {
-                            Text("Sign In")
+                            Text("Sign Up")
                                 .foregroundColor(.white)
                                 .padding()
                                 .frame(maxWidth: .infinity)
@@ -54,7 +53,7 @@ struct SignInView: View {
                     .toolbar {
                         ToolbarItem(placement: .principal) {
                             VStack {
-                                Text("Sign In")
+                                Text("Sign Up")
                                     .font(.customFont(.PoppinsSemiBold, 28))
                                     .foregroundColor(Color.white)
                             }
@@ -66,13 +65,13 @@ struct SignInView: View {
                 
                 //to sign Up
                 HStack {
-                    Text("Don't Have an Account?")
+                    Text("Already Have an Account?")
                         .foregroundColor(.white)
                     
                     Button(action: {
-                        vm.isSignUpActive.toggle()
+                        vm.isSignInActive.toggle()
                     }) {
-                        Text("Sign Up")
+                        Text("Sign In")
                             .foregroundColor(Color.custom(.HEX_B3B9C9))
                     }
                     
@@ -87,7 +86,7 @@ struct SignInView: View {
             Alert(title: Text("Error"), message: Text("Invalid email or password."))
         }
         .background(
-            NavigationLink( destination: SignUpView(), isActive: $vm.isSignUpActive) {}
+            NavigationLink( destination: SignInView(), isActive: $vm.isSignInActive) {}
         )
     }
     
@@ -112,9 +111,8 @@ struct SignInView: View {
     
 }
 
-//MARK: - PREVIEW
-struct SignInView_Previews: PreviewProvider {
+struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView()
+        SignUpView()
     }
 }
