@@ -20,7 +20,8 @@ struct ContentView: View {
         NavigationView {
             
 //            ChatListView()
-            SignInView()
+//            SignInView()
+            ChatRoomView()
             
         }
     }

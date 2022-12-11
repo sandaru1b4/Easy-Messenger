@@ -27,6 +27,8 @@
 		84851A05293397410011A518 /* Poppins SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84851A04293397410011A518 /* Poppins SemiBold.ttf */; };
 		84851A07293397620011A518 /* Poppins Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84851A06293397620011A518 /* Poppins Regular.ttf */; };
 		84851A09293397CA0011A518 /* Mulish.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84851A08293397CA0011A518 /* Mulish.ttf */; };
+		849B872A294595DD0068D452 /* ChatRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B8729294595DD0068D452 /* ChatRoomView.swift */; };
+		849B872C294596CF0068D452 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B872B294596CF0068D452 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		84851A06293397620011A518 /* Poppins Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins Regular.ttf"; sourceTree = "<group>"; };
 		84851A08293397CA0011A518 /* Mulish.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mulish.ttf; sourceTree = "<group>"; };
 		84851A0A29339E920011A518 /* Easy-Messenger-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Easy-Messenger-Info.plist"; sourceTree = SOURCE_ROOT; };
+		849B8729294595DD0068D452 /* ChatRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomView.swift; sourceTree = "<group>"; };
+		849B872B294596CF0068D452 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		A0B145C88AF52D918D2F65C1 /* Pods_Easy_Messenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easy_Messenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BF12D4CFFCD7BE4494FB74 /* Pods-Easy Messenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Messenger.debug.xcconfig"; path = "Target Support Files/Pods-Easy Messenger/Pods-Easy Messenger.debug.xcconfig"; sourceTree = "<group>"; };
 		F8555BD95C5B6936B82C6B40 /* Pods-Easy Messenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Messenger.release.xcconfig"; path = "Target Support Files/Pods-Easy Messenger/Pods-Easy Messenger.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 		842302D529332D48009C16BF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				849B872B294596CF0068D452 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 		842302E229338CC8009C16BF /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				849B8728294595C80068D452 /* ChatRoom */,
 				842302E329338CD6009C16BF /* ChatList */,
 			);
 			path = Chat;
@@ -240,6 +246,14 @@
 				84851A04293397410011A518 /* Poppins SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		849B8728294595C80068D452 /* ChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				849B8729294595DD0068D452 /* ChatRoomView.swift */,
+			);
+			path = ChatRoom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +385,8 @@
 				84096C312944AB31000A81C7 /* SignInViewModel.swift in Sources */,
 				842302DE29338C8D009C16BF /* ChatListRowView.swift in Sources */,
 				84096C2F2944A9DD000A81C7 /* SignInView.swift in Sources */,
+				849B872A294595DD0068D452 /* ChatRoomView.swift in Sources */,
+				849B872C294596CF0068D452 /* Message.swift in Sources */,
 				84096C352944C48E000A81C7 /* ViewModifiers.swift in Sources */,
 				84851A02293396280011A518 /* Fonts+Extension.swift in Sources */,
 			);
