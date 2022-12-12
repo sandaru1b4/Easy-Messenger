@@ -23,7 +23,6 @@ struct ChatRoomView: View {
     //MARK: - BODY
     var body: some View {
         
-        
         VStack {
             
             
@@ -111,6 +110,8 @@ func sendMessage() {
 
 }
 
+
+//MARK: - PREVIEW
 struct ChatRoomView_Previews: PreviewProvider {
     static var previews: some View {
         ChatRoomView()
